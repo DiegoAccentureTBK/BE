@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "fa8d96ca-bf32-4f7c-9ce3-1c16ca5a16fe",
+		"name": "BE",
+		"description": "TBK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32313027",
+		"_collection_link": "https://planetary-zodiac-490028.postman.co/workspace/BOLETA-ELECTRONICA-API~f288a22f-c824-480c-b500-30c973d602d6/collection/32313027-fa8d96ca-bf32-4f7c-9ce3-1c16ca5a16fe?action=share&source=collection_link&creator=32313027"
+	},
+	"item": [
+		{
+			"name": "creaBoleta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"SCE_TIPO_SOLICITUD\": \"503\",\r\n  \"SCE_TIPO_OPERACION\": \"1\",\r\n  \"SCE_FUNCIONALIDAD\": \"Alta con CD\",\r\n  \"SCE_RUT_COMERCIO\": \"96792430-K\",\r\n  \"SCE_ID_SOLICITUD\": \"4454555\",\r\n  \"SCE_CANAL_SOLICITUD\": \"Portal Privado\",\r\n  \"SCE_FECHA_SOLICITUD\": \"20/01/2020\",\r\n  \"SCE_USUARIO_SOLICITUD\": \"Juan Perez\",\r\n  \"SCE_ID_PASO\": \"1-3UABXCE\",\r\n  \"SCE_GIRO_COMERCIO\": \"Distribución de Materiales de Construcción\",\r\n  \"SCE_CODIGO_ACTECO\": \"123abc\",\r\n  \"SCE_RAZON_SOCIAL_COMERCIO\": \"ABDHDDHYD==\",\r\n  \"SCE_DIRECCION_COMERCIO\": \"AGGSHHDGDHDH==\",\r\n  \"SCE_COMUNA_COMERCIO\": \"IUJHBDBND==\",\r\n  \"SCE_CIUDAD_COMERCIO\": \"CJHHDKD==\",\r\n  \"SCE_OFICINA_REGIONAL_SII\": \"QWxvbnNvIE92YWxsZSA2NDAsIFNhbnRpYWdvIENlbnRybw==\",\r\n  \"SCE_RUT_REPRESENTANTE\": \"96792430-K\",\r\n  \"SCE_NOMBRE_REPRESENTANTE\": \"RWR1YXJkbyBBbGJlcnRvIFRhcGlhIFRhcGlh\",\r\n  \"SCE_EMAIL_REPRESENTANTE\": \"ZXRhcGlhQHRyYW5zYmFuay5jbA==\",\r\n  \"SCE_CELULAR_REPRESENTANTE\": \"OTkwNzg2NjIx==\",\r\n  \"SCE_PLAN_A_CONTRATAR\": \"1\",\r\n  \"SCE_CODIGO_CD\": \"A480000220B11E0CL2\",\r\n  \"SCE_RUT_FCD\": \"96792430-K\",\r\n  \"SCE_FECHA_CCD\": \"11/07/2022 11:30:30\",\r\n  \"SCE_FECHA_VCD\": \"11/07/2023 11:30:30\",\r\n  \"SCE_RUT_PROVEEDOR_CD\": \"96919050-8\",\r\n  \"SCE_CERTIFICADO_DIGITAL\": \"el arcivo del certificado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/creaBoleta"
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"GE_TIPO_OPERACION\": 1,\r\n  \"GE_TIPO_DTE\": \" 39\",\r\n  \"GE_FECHA_EMI\": \"03/04/2020\",\r\n  \"GE_RUT_EMI\": \"96919050-8\",\r\n  \"GE_RAZON_SOCIAL\": \"Q2FzYSB5IEhvZ2FyIFMuQS4=\",\r\n  \"GE_NOM_ITEM\": \"VmVudGEgYWwgRGV0YWxsZSBBZmVjdG8=\",\r\n  \"GE_MONTO\": 123456789012345680,\r\n  \"GE_ID_UNICO\": \"NTk3MDEyMzQ1Njc4MDEwMTIwMjAyMzU5NTkxMjM0NTY=\",\r\n  \"GE_MEDIO_PAGO\": \"TC\",\r\n  \"GE_NOM_FANTASIA\": \"SG9tZWNlbnRlciBTb2RpbWFj\",\r\n  \"GE_DIR_COM\": \"QXYuIEFtZXJpY28gVmVzcHVjaW8gNzMxMC4gTGEgRmxvcmlkYQ==\",\r\n  \"GE_CIUDAD_COM\": \"U2FudGlhZ28=\",\r\n  \"GE_COD_COMERCIO\": 597029414300,\r\n  \"GE_VER_POS\": \"V19.1 L1\",\r\n  \"GE_FECHA_OPERACION\": \"21/01/2020\",\r\n  \"GE_HORA_OPERACION\": \"111510\",\r\n  \"GE_TERMINAL\": \"NjUzRFYwNTM=\",\r\n  \"GE_NUM_TARJETA\": 8784,\r\n  \"GE_FORMA_OPERACION\": \"Qy1EQg==\",\r\n  \"GE_PROPINA\": 1000,\r\n  \"GE_VUELTO\": 10000,\r\n  \"GE_TOTAL\": 100000,\r\n  \"GE_EMPLEADO\": 1234,\r\n  \"GE_NUM_OPERACION\": 123456,\r\n  \"GE_COD_AUTORIZACION\": \"ODcyMDQ2\",\r\n  \"GE_TASA_INTERES\": \"MDEsNjA=\",\r\n  \"GE_GLOSA_CUOTA\": \"Q1VPVEFTIENPTUVSQ0lP\",\r\n  \"GE_GLOSA_CUOTA_2\": \"MDA=\",\r\n  \"GE_GLOSA_PROMOCION\": \"VFJBTlNBQ0NJT04gUFJFTUlBREE=\",\r\n  \"GE_TIPO_MONEDA\": \"Peso\",\r\n  \"GE_SALDO_PREPAGO\": 50000,\r\n  \"GE_GLOSA_PREPAGO\": \"Su Saldo es:\",\r\n  \"GE_FECHA_CONTABLE\": \"30/01/2020\",\r\n  \"GE_NUM_CUENTA\": 8789,\r\n  \"GE_TIPO_CUOTA\": \"U2luIEN1b3Rhcw==\",\r\n  \"GE_VAL_CUOTA_1\": 10066,\r\n  \"GE_VAL_CUOTA_2\": 10066,\r\n  \"GE_VAL_CUOTA_3\": 10068,\r\n  \"GE_VAL_CUOTA_DIF_1\": 10000,\r\n  \"GE_TASA_DIF_2\": \"MDEsNg==\",\r\n  \"GE_VAL_CUOTA_DIF_2\": 15000,\r\n  \"GE_TASA_DIF_3\": \"MDEsNg==\",\r\n  \"GE_VAL_CUOTA_DIF_3\": 15080,\r\n  \"GE_NUM_CUOTAS\": 6,\r\n  \"GE_CANAL\": 1,\r\n  \"GE_GLOSA_SURCHARGE\": \"MTAwMA==\",\r\n  \"GE_LABEL_ID\": \"TUFFU1RSTw==\",\r\n  \"GE_APLICATION_ID\": \"A000000004360\",\r\n  \"GE_RUT_RECEPTOR\": \"NjY2NjY2NjYtNg==\",\r\n  \"GE_NOMBRE_RECEPTOR\": \"Tm9tYnJlIGRlbCBSZWNlcHRvcg==\",\r\n  \"GE_DIRECCION_RECEPTOR\": \"QXYuIEFtZXJpY28gVmVzcHVjaW8gNzMxMC4gTGEgRmxvcmlkYQ==\",\r\n  \"GE_COMUNA_RECEPTOR\": \"U2FudGlhZ28=\",\r\n  \"GE_CIUDAD_RECEPTOR\": \"U2FudGlhZ28=\",\r\n  \"GE_EMAIL_RECEPTOR\": \"YW5kcmVzLnRhcGlhQGFjZXB0YS5jb20=\",\r\n  \"GE_Monto_Neto\": 10000,\r\n  \"GE_Monto_IVA\\\"\": 2000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://a4fd1fb5-315a-487a-9563-5a8135d81d2e.mock.pstmn.io/creaBoleta"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"S_CODIGO_RESPUESTA\": \"00\",\n  \"S_ID_UNICO_TBK\": \"NTk3MDEyMzQ1Njc4MDEwMTIwMjAyMzU5NTkxMjM0NTY=\",\n  \"S_MENSAJE_RESPUESTA\": \"VHJhbnNhY2Npw7NuIEV4aXRvc2E=\",\n  \"S_NUMERO_FOLIO\": \"2146568\",\n  \"S_TED\": \"PFRFRCB2ZXJzaW9uPSIxLjAiPjxERD48UkU+OTY5MTkwNTAtODwvUkU+PFREPjM5PC9URD48Rj4yMTQ2NTY4PC9GPjxGRT4yMDIwLTA0LTAzPC9GRT48UlI+NjY2NjY2NjYtNjwvUlI+PFJTUj5Ob21icmUgZGVsIFJlY2VwdG9yPC9SU1I+PE1OVD4xMjM0NTY3ODkwMTIzNDU2Nzg8L01OVD48SVQxPlZlbnRhIGFsIERldGFsbGUgQWZlY3RvPC9JVDE+PENBRiB2ZXJzaW9uPSIxLjAiPjxEQT48UkU+OTY5MTkwNTAtODwvUkU+PFJTPkFDRVBUQSBDT00gUyBBPC9SUz48VEQ+Mzk8L1REPjxSTkc+PEQ+MjE0NjE3NDwvRD48SD4yMTUxMTczPC9IPjwvUk5HPjxGQT4yMDIwLTA3LTI0PC9GQT48UlNBUEs+PE0+M3BlQmxIZVVaei8ybVVoZG5oQy94RlJLb1d4ZEpJOWdId2xYaExUSlhsK1AvUzJlRXlYZmlGeTFHNEJidERDZUdjYTVhTVMrbmx2Mm83dllVVm43TFE9PTwvTT48RT5Bdz09PC9FPjwvUlNBUEs+PElESz4xMDA8L0lESz48L0RBPjxGUk1BIGFsZ29yaXRtbz0iU0hBMXdpdGhSU0EiPlVNT3Rwb1IwalBvdHdiL0JYbGhOcUNoSFF5c25sWnZmL3QyVXVaSXdCNkNCOEladFdINHMrcHAwVnpXTk5nM2RZKzNQTEgzNDFUUGh4V0xYMXlJQ0RBPT08L0ZSTUE+PC9DQUY+PFRTVEVEPjIwMjAtMDktMjlUMTY6MTk6NDg8L1RTVEVEPjwvREQ+PEZSTVQgYWxnb3JpdG1vPSJTSEExd2l0aFJTQSI+cUZQU1lpdW1ZdGhDRkEyQUw1bFVELzRjUi9NRzlNZ1lEaUdYVGkyVnY4SGVzeU9FM3Eya2w3Y0dYQWNsbWx5RjVHWDdmUFRYR1VmZURJRjU0TERDSEE9PTwvRlJNVD48L1RFRD4K\"\n}"
+				},
+				{
+					"name": "401",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SCE_TIPO_SOLICITUD\": \"401\",\r\n  \"SCE_TIPO_OPERACION\": \"1\",\r\n  \"SCE_FUNCIONALIDAD\": \"Alta con CD\",\r\n  \"SCE_RUT_COMERCIO\": \"96792430-K\",\r\n  \"SCE_ID_SOLICITUD\": \"4454555\",\r\n  \"SCE_CANAL_SOLICITUD\": \"Portal Privado\",\r\n  \"SCE_FECHA_SOLICITUD\": \"20/01/2020\",\r\n  \"SCE_USUARIO_SOLICITUD\": \"Juan Perez\",\r\n  \"SCE_ID_PASO\": \"1-3UABXCE\",\r\n  \"SCE_GIRO_COMERCIO\": \"Distribución de Materiales de Construcción\",\r\n  \"SCE_CODIGO_ACTECO\": \"123abc\",\r\n  \"SCE_RAZON_SOCIAL_COMERCIO\": \"ABDHDDHYD==\",\r\n  \"SCE_DIRECCION_COMERCIO\": \"AGGSHHDGDHDH==\",\r\n  \"SCE_COMUNA_COMERCIO\": \"IUJHBDBND==\",\r\n  \"SCE_CIUDAD_COMERCIO\": \"CJHHDKD==\",\r\n  \"SCE_OFICINA_REGIONAL_SII\": \"QWxvbnNvIE92YWxsZSA2NDAsIFNhbnRpYWdvIENlbnRybw==\",\r\n  \"SCE_RUT_REPRESENTANTE\": \"96792430-K\",\r\n  \"SCE_NOMBRE_REPRESENTANTE\": \"RWR1YXJkbyBBbGJlcnRvIFRhcGlhIFRhcGlh\",\r\n  \"SCE_EMAIL_REPRESENTANTE\": \"ZXRhcGlhQHRyYW5zYmFuay5jbA==\",\r\n  \"SCE_CELULAR_REPRESENTANTE\": \"OTkwNzg2NjIx==\",\r\n  \"SCE_PLAN_A_CONTRATAR\": \"1\",\r\n  \"SCE_CODIGO_CD\": \"A480000220B11E0CL2\",\r\n  \"SCE_RUT_FCD\": \"96792430-K\",\r\n  \"SCE_FECHA_CCD\": \"11/07/2022 11:30:30\",\r\n  \"SCE_FECHA_VCD\": \"11/07/2023 11:30:30\",\r\n  \"SCE_RUT_PROVEEDOR_CD\": \"96919050-8\",\r\n  \"SCE_CERTIFICADO_DIGITAL\": \"el arcivo del certificado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/creaBoleta"
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"S_CODIGO_RESPUESTA\": \"00\",\n  \"S_ID_UNICO_TBK\": \"NTk3MDEyMzQ1Njc4MDEwMTIwMjAyMzU5NTkxMjM0NTY=\",\n  \"S_MENSAJE_RESPUESTA\": \"VHJhbnNhY2Npw7NuIEV4aXRvc2E=\",\n  \"S_NUMERO_FOLIO\": \"2146568\",\n  \"S_TED\": \"PFRFRCB2ZXJzaW9uPSIxLjAiPjxERD48UkU+OTY5MTkwNTAtODwvUkU+PFREPjM5PC9URD48Rj4yMTQ2NTY4PC9GPjxGRT4yMDIwLTA0LTAzPC9GRT48UlI+NjY2NjY2NjYtNjwvUlI+PFJTUj5Ob21icmUgZGVsIFJlY2VwdG9yPC9SU1I+PE1OVD4xMjM0NTY3ODkwMTIzNDU2Nzg8L01OVD48SVQxPlZlbnRhIGFsIERldGFsbGUgQWZlY3RvPC9JVDE+PENBRiB2ZXJzaW9uPSIxLjAiPjxEQT48UkU+OTY5MTkwNTAtODwvUkU+PFJTPkFDRVBUQSBDT00gUyBBPC9SUz48VEQ+Mzk8L1REPjxSTkc+PEQ+MjE0NjE3NDwvRD48SD4yMTUxMTczPC9IPjwvUk5HPjxGQT4yMDIwLTA3LTI0PC9GQT48UlNBUEs+PE0+M3BlQmxIZVVaei8ybVVoZG5oQy94RlJLb1d4ZEpJOWdId2xYaExUSlhsK1AvUzJlRXlYZmlGeTFHNEJidERDZUdjYTVhTVMrbmx2Mm83dllVVm43TFE9PTwvTT48RT5Bdz09PC9FPjwvUlNBUEs+PElESz4xMDA8L0lESz48L0RBPjxGUk1BIGFsZ29yaXRtbz0iU0hBMXdpdGhSU0EiPlVNT3Rwb1IwalBvdHdiL0JYbGhOcUNoSFF5c25sWnZmL3QyVXVaSXdCNkNCOEladFdINHMrcHAwVnpXTk5nM2RZKzNQTEgzNDFUUGh4V0xYMXlJQ0RBPT08L0ZSTUE+PC9DQUY+PFRTVEVEPjIwMjAtMDktMjlUMTY6MTk6NDg8L1RTVEVEPjwvREQ+PEZSTVQgYWxnb3JpdG1vPSJTSEExd2l0aFJTQSI+cUZQU1lpdW1ZdGhDRkEyQUw1bFVELzRjUi9NRzlNZ1lEaUdYVGkyVnY4SGVzeU9FM3Eya2w3Y0dYQWNsbWx5RjVHWDdmUFRYR1VmZURJRjU0TERDSEE9PTwvRlJNVD48L1RFRD4K\"\n}"
+				},
+				{
+					"name": "503",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SCE_TIPO_SOLICITUD\": \"503\",\r\n  \"SCE_TIPO_OPERACION\": \"1\",\r\n  \"SCE_FUNCIONALIDAD\": \"Alta con CD\",\r\n  \"SCE_RUT_COMERCIO\": \"96792430-K\",\r\n  \"SCE_ID_SOLICITUD\": \"4454555\",\r\n  \"SCE_CANAL_SOLICITUD\": \"Portal Privado\",\r\n  \"SCE_FECHA_SOLICITUD\": \"20/01/2020\",\r\n  \"SCE_USUARIO_SOLICITUD\": \"Juan Perez\",\r\n  \"SCE_ID_PASO\": \"1-3UABXCE\",\r\n  \"SCE_GIRO_COMERCIO\": \"Distribución de Materiales de Construcción\",\r\n  \"SCE_CODIGO_ACTECO\": \"123abc\",\r\n  \"SCE_RAZON_SOCIAL_COMERCIO\": \"ABDHDDHYD==\",\r\n  \"SCE_DIRECCION_COMERCIO\": \"AGGSHHDGDHDH==\",\r\n  \"SCE_COMUNA_COMERCIO\": \"IUJHBDBND==\",\r\n  \"SCE_CIUDAD_COMERCIO\": \"CJHHDKD==\",\r\n  \"SCE_OFICINA_REGIONAL_SII\": \"QWxvbnNvIE92YWxsZSA2NDAsIFNhbnRpYWdvIENlbnRybw==\",\r\n  \"SCE_RUT_REPRESENTANTE\": \"96792430-K\",\r\n  \"SCE_NOMBRE_REPRESENTANTE\": \"RWR1YXJkbyBBbGJlcnRvIFRhcGlhIFRhcGlh\",\r\n  \"SCE_EMAIL_REPRESENTANTE\": \"ZXRhcGlhQHRyYW5zYmFuay5jbA==\",\r\n  \"SCE_CELULAR_REPRESENTANTE\": \"OTkwNzg2NjIx==\",\r\n  \"SCE_PLAN_A_CONTRATAR\": \"1\",\r\n  \"SCE_CODIGO_CD\": \"A480000220B11E0CL2\",\r\n  \"SCE_RUT_FCD\": \"96792430-K\",\r\n  \"SCE_FECHA_CCD\": \"11/07/2022 11:30:30\",\r\n  \"SCE_FECHA_VCD\": \"11/07/2023 11:30:30\",\r\n  \"SCE_RUT_PROVEEDOR_CD\": \"96919050-8\",\r\n  \"SCE_CERTIFICADO_DIGITAL\": \"el arcivo del certificado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/creaBoleta"
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"S_CODIGO_RESPUESTA\": \"00\",\n  \"S_ID_UNICO_TBK\": \"NTk3MDEyMzQ1Njc4MDEwMTIwMjAyMzU5NTkxMjM0NTY=\",\n  \"S_MENSAJE_RESPUESTA\": \"VHJhbnNhY2Npw7NuIEV4aXRvc2E=\",\n  \"S_NUMERO_FOLIO\": \"2146568\",\n  \"S_TED\": \"PFRFRCB2ZXJzaW9uPSIxLjAiPjxERD48UkU+OTY5MTkwNTAtODwvUkU+PFREPjM5PC9URD48Rj4yMTQ2NTY4PC9GPjxGRT4yMDIwLTA0LTAzPC9GRT48UlI+NjY2NjY2NjYtNjwvUlI+PFJTUj5Ob21icmUgZGVsIFJlY2VwdG9yPC9SU1I+PE1OVD4xMjM0NTY3ODkwMTIzNDU2Nzg8L01OVD48SVQxPlZlbnRhIGFsIERldGFsbGUgQWZlY3RvPC9JVDE+PENBRiB2ZXJzaW9uPSIxLjAiPjxEQT48UkU+OTY5MTkwNTAtODwvUkU+PFJTPkFDRVBUQSBDT00gUyBBPC9SUz48VEQ+Mzk8L1REPjxSTkc+PEQ+MjE0NjE3NDwvRD48SD4yMTUxMTczPC9IPjwvUk5HPjxGQT4yMDIwLTA3LTI0PC9GQT48UlNBUEs+PE0+M3BlQmxIZVVaei8ybVVoZG5oQy94RlJLb1d4ZEpJOWdId2xYaExUSlhsK1AvUzJlRXlYZmlGeTFHNEJidERDZUdjYTVhTVMrbmx2Mm83dllVVm43TFE9PTwvTT48RT5Bdz09PC9FPjwvUlNBUEs+PElESz4xMDA8L0lESz48L0RBPjxGUk1BIGFsZ29yaXRtbz0iU0hBMXdpdGhSU0EiPlVNT3Rwb1IwalBvdHdiL0JYbGhOcUNoSFF5c25sWnZmL3QyVXVaSXdCNkNCOEladFdINHMrcHAwVnpXTk5nM2RZKzNQTEgzNDFUUGh4V0xYMXlJQ0RBPT08L0ZSTUE+PC9DQUY+PFRTVEVEPjIwMjAtMDktMjlUMTY6MTk6NDg8L1RTVEVEPjwvREQ+PEZSTVQgYWxnb3JpdG1vPSJTSEExd2l0aFJTQSI+cUZQU1lpdW1ZdGhDRkEyQUw1bFVELzRjUi9NRzlNZ1lEaUdYVGkyVnY4SGVzeU9FM3Eya2w3Y0dYQWNsbWx5RjVHWDdmUFRYR1VmZURJRjU0TERDSEE9PTwvRlJNVD48L1RFRD4K\"\n}"
+				}
+			]
+		},
+		{
+			"name": "crea_comercio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"SCE_TIPO_SOLICITUD\": \"503\",\r\n  \"SCE_TIPO_OPERACION\": \"1\",\r\n  \"SCE_FUNCIONALIDAD\": \"Alta con CD\",\r\n  \"SCE_RUT_COMERCIO\": \"96792430-K\",\r\n  \"SCE_ID_SOLICITUD\": \"4454555\",\r\n  \"SCE_CANAL_SOLICITUD\": \"Portal Privado\",\r\n  \"SCE_FECHA_SOLICITUD\": \"20/01/2020\",\r\n  \"SCE_USUARIO_SOLICITUD\": \"Juan Perez\",\r\n  \"SCE_ID_PASO\": \"1-3UABXCE\",\r\n  \"SCE_GIRO_COMERCIO\": \"Distribución de Materiales de Construcción\",\r\n  \"SCE_CODIGO_ACTECO\": \"123abc\",\r\n  \"SCE_RAZON_SOCIAL_COMERCIO\": \"ABDHDDHYD==\",\r\n  \"SCE_DIRECCION_COMERCIO\": \"AGGSHHDGDHDH==\",\r\n  \"SCE_COMUNA_COMERCIO\": \"IUJHBDBND==\",\r\n  \"SCE_CIUDAD_COMERCIO\": \"CJHHDKD==\",\r\n  \"SCE_OFICINA_REGIONAL_SII\": \"QWxvbnNvIE92YWxsZSA2NDAsIFNhbnRpYWdvIENlbnRybw==\",\r\n  \"SCE_RUT_REPRESENTANTE\": \"96792430-K\",\r\n  \"SCE_NOMBRE_REPRESENTANTE\": \"RWR1YXJkbyBBbGJlcnRvIFRhcGlhIFRhcGlh\",\r\n  \"SCE_EMAIL_REPRESENTANTE\": \"ZXRhcGlhQHRyYW5zYmFuay5jbA==\",\r\n  \"SCE_CELULAR_REPRESENTANTE\": \"OTkwNzg2NjIx==\",\r\n  \"SCE_PLAN_A_CONTRATAR\": \"1\",\r\n  \"SCE_CODIGO_CD\": \"A480000220B11E0CL2\",\r\n  \"SCE_RUT_FCD\": \"96792430-K\",\r\n  \"SCE_FECHA_CCD\": \"11/07/2022 11:30:30\",\r\n  \"SCE_FECHA_VCD\": \"11/07/2023 11:30:30\",\r\n  \"SCE_RUT_PROVEEDOR_CD\": \"96919050-8\",\r\n  \"SCE_CERTIFICADO_DIGITAL\": \"el arcivo del certificado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/crea_comercio"
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SCE_TIPO_SOLICITUD\": \"1\",\r\n  \"SCE_TIPO_OPERACION\": \"1\",\r\n  \"SCE_FUNCIONALIDAD\": \"Alta con CD\",\r\n  \"SCE_RUT_COMERCIO\": \"96792430-K\",\r\n  \"SCE_ID_SOLICITUD\": \"4454555\",\r\n  \"SCE_CANAL_SOLICITUD\": \"Portal Privado\",\r\n  \"SCE_FECHA_SOLICITUD\": \"20/01/2020\",\r\n  \"SCE_USUARIO_SOLICITUD\": \"Juan Perez\",\r\n  \"SCE_ID_PASO\": \"1-3UABXCE\",\r\n  \"SCE_GIRO_COMERCIO\": \"Distribución de Materiales de Construcción\",\r\n  \"SCE_CODIGO_ACTECO\": \"123abc\",\r\n  \"SCE_RAZON_SOCIAL_COMERCIO\": \"ABDHDDHYD==\",\r\n  \"SCE_DIRECCION_COMERCIO\": \"AGGSHHDGDHDH==\",\r\n  \"SCE_COMUNA_COMERCIO\": \"IUJHBDBND==\",\r\n  \"SCE_CIUDAD_COMERCIO\": \"CJHHDKD==\",\r\n  \"SCE_OFICINA_REGIONAL_SII\": \"QWxvbnNvIE92YWxsZSA2NDAsIFNhbnRpYWdvIENlbnRybw==\",\r\n  \"SCE_RUT_REPRESENTANTE\": \"96792430-K\",\r\n  \"SCE_NOMBRE_REPRESENTANTE\": \"RWR1YXJkbyBBbGJlcnRvIFRhcGlhIFRhcGlh\",\r\n  \"SCE_EMAIL_REPRESENTANTE\": \"ZXRhcGlhQHRyYW5zYmFuay5jbA==\",\r\n  \"SCE_CELULAR_REPRESENTANTE\": \"OTkwNzg2NjIx==\",\r\n  \"SCE_PLAN_A_CONTRATAR\": \"1\",\r\n  \"SCE_CODIGO_CD\": \"A480000220B11E0CL2\",\r\n  \"SCE_RUT_FCD\": \"96792430-K\",\r\n  \"SCE_FECHA_CCD\": \"11/07/2022 11:30:30\",\r\n  \"SCE_FECHA_VCD\": \"11/07/2023 11:30:30\",\r\n  \"SCE_RUT_PROVEEDOR_CD\": \"96919050-8\",\r\n  \"SCE_CERTIFICADO_DIGITAL\": \"el arcivo del certificado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://a4fd1fb5-315a-487a-9563-5a8135d81d2e.mock.pstmn.io/crea_comercio"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"SCS_TIPO_SOLICITUD\": \"string\",\n  \"SCS_TIPO_OPERACION\": \"string\",\n  \"SCS_FUNCIONALIDAD\": \"string\",\n  \"SCS_RUT_COMERCIO\": \"string\",\n  \"SCS_ID_SOLICITUD\": \"string\",\n  \"SCS_ESTADO_SOLICITUD\": \"string\",\n  \"SCS_MENSAJE_RESPUESTA\": \"string\"\n}"
+				},
+				{
+					"name": "401",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SCE_TIPO_SOLICITUD\": \"401\",\r\n  \"SCE_TIPO_OPERACION\": \"1\",\r\n  \"SCE_FUNCIONALIDAD\": \"Alta con CD\",\r\n  \"SCE_RUT_COMERCIO\": \"96792430-K\",\r\n  \"SCE_ID_SOLICITUD\": \"4454555\",\r\n  \"SCE_CANAL_SOLICITUD\": \"Portal Privado\",\r\n  \"SCE_FECHA_SOLICITUD\": \"20/01/2020\",\r\n  \"SCE_USUARIO_SOLICITUD\": \"Juan Perez\",\r\n  \"SCE_ID_PASO\": \"1-3UABXCE\",\r\n  \"SCE_GIRO_COMERCIO\": \"Distribución de Materiales de Construcción\",\r\n  \"SCE_CODIGO_ACTECO\": \"123abc\",\r\n  \"SCE_RAZON_SOCIAL_COMERCIO\": \"ABDHDDHYD==\",\r\n  \"SCE_DIRECCION_COMERCIO\": \"AGGSHHDGDHDH==\",\r\n  \"SCE_COMUNA_COMERCIO\": \"IUJHBDBND==\",\r\n  \"SCE_CIUDAD_COMERCIO\": \"CJHHDKD==\",\r\n  \"SCE_OFICINA_REGIONAL_SII\": \"QWxvbnNvIE92YWxsZSA2NDAsIFNhbnRpYWdvIENlbnRybw==\",\r\n  \"SCE_RUT_REPRESENTANTE\": \"96792430-K\",\r\n  \"SCE_NOMBRE_REPRESENTANTE\": \"RWR1YXJkbyBBbGJlcnRvIFRhcGlhIFRhcGlh\",\r\n  \"SCE_EMAIL_REPRESENTANTE\": \"ZXRhcGlhQHRyYW5zYmFuay5jbA==\",\r\n  \"SCE_CELULAR_REPRESENTANTE\": \"OTkwNzg2NjIx==\",\r\n  \"SCE_PLAN_A_CONTRATAR\": \"1\",\r\n  \"SCE_CODIGO_CD\": \"A480000220B11E0CL2\",\r\n  \"SCE_RUT_FCD\": \"96792430-K\",\r\n  \"SCE_FECHA_CCD\": \"11/07/2022 11:30:30\",\r\n  \"SCE_FECHA_VCD\": \"11/07/2023 11:30:30\",\r\n  \"SCE_RUT_PROVEEDOR_CD\": \"96919050-8\",\r\n  \"SCE_CERTIFICADO_DIGITAL\": \"el arcivo del certificado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/crea_comercio"
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"SCS_TIPO_SOLICITUD\": \"string\",\n  \"SCS_TIPO_OPERACION\": \"string\",\n  \"SCS_FUNCIONALIDAD\": \"string\",\n  \"SCS_RUT_COMERCIO\": \"string\",\n  \"SCS_ID_SOLICITUD\": \"string\",\n  \"SCS_ESTADO_SOLICITUD\": \"string\",\n  \"SCS_MENSAJE_RESPUESTA\": \"string\"\n}"
+				},
+				{
+					"name": "503",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SCE_TIPO_SOLICITUD\": \"503\",\r\n  \"SCE_TIPO_OPERACION\": \"1\",\r\n  \"SCE_FUNCIONALIDAD\": \"Alta con CD\",\r\n  \"SCE_RUT_COMERCIO\": \"96792430-K\",\r\n  \"SCE_ID_SOLICITUD\": \"4454555\",\r\n  \"SCE_CANAL_SOLICITUD\": \"Portal Privado\",\r\n  \"SCE_FECHA_SOLICITUD\": \"20/01/2020\",\r\n  \"SCE_USUARIO_SOLICITUD\": \"Juan Perez\",\r\n  \"SCE_ID_PASO\": \"1-3UABXCE\",\r\n  \"SCE_GIRO_COMERCIO\": \"Distribución de Materiales de Construcción\",\r\n  \"SCE_CODIGO_ACTECO\": \"123abc\",\r\n  \"SCE_RAZON_SOCIAL_COMERCIO\": \"ABDHDDHYD==\",\r\n  \"SCE_DIRECCION_COMERCIO\": \"AGGSHHDGDHDH==\",\r\n  \"SCE_COMUNA_COMERCIO\": \"IUJHBDBND==\",\r\n  \"SCE_CIUDAD_COMERCIO\": \"CJHHDKD==\",\r\n  \"SCE_OFICINA_REGIONAL_SII\": \"QWxvbnNvIE92YWxsZSA2NDAsIFNhbnRpYWdvIENlbnRybw==\",\r\n  \"SCE_RUT_REPRESENTANTE\": \"96792430-K\",\r\n  \"SCE_NOMBRE_REPRESENTANTE\": \"RWR1YXJkbyBBbGJlcnRvIFRhcGlhIFRhcGlh\",\r\n  \"SCE_EMAIL_REPRESENTANTE\": \"ZXRhcGlhQHRyYW5zYmFuay5jbA==\",\r\n  \"SCE_CELULAR_REPRESENTANTE\": \"OTkwNzg2NjIx==\",\r\n  \"SCE_PLAN_A_CONTRATAR\": \"1\",\r\n  \"SCE_CODIGO_CD\": \"A480000220B11E0CL2\",\r\n  \"SCE_RUT_FCD\": \"96792430-K\",\r\n  \"SCE_FECHA_CCD\": \"11/07/2022 11:30:30\",\r\n  \"SCE_FECHA_VCD\": \"11/07/2023 11:30:30\",\r\n  \"SCE_RUT_PROVEEDOR_CD\": \"96919050-8\",\r\n  \"SCE_CERTIFICADO_DIGITAL\": \"el arcivo del certificado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/crea_comercio"
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"SCS_TIPO_SOLICITUD\": \"string\",\n  \"SCS_TIPO_OPERACION\": \"string\",\n  \"SCS_FUNCIONALIDAD\": \"string\",\n  \"SCS_RUT_COMERCIO\": \"string\",\n  \"SCS_ID_SOLICITUD\": \"string\",\n  \"SCS_ESTADO_SOLICITUD\": \"string\",\n  \"SCS_MENSAJE_RESPUESTA\": \"string\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://a4fd1fb5-315a-487a-9563-5a8135d81d2e.mock.pstmn.io"
+		}
+	]
+}
